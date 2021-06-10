@@ -76,10 +76,6 @@ export default {
       status: "action",
     };
   },
-  destroyed() {
-    db.doc("dddd5555").get().then(r => console.log(r.data()))
-    db.doc("dddd5555").add({})
-  },
   methods: {
     Create(type, count = 1) {
       for (var i1 = 0; i1 < count; i1++) {
